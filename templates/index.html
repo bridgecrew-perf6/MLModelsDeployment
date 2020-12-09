@@ -4,11 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Phone Rating Predictor</title>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
 <body>
  <div class="login" style = "top:180px;" >
@@ -16,15 +11,15 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-      <label style = "margin:20px;">Height</label><input type="text" name="Height" placeholder="In mm - range:140 to 200" required="required" />
-      <label style = "margin:20px;">Weight</label><input type="text" name="Weight" placeholder="Weight in gms - range: 140 to 200" required="required" />
-      <label style = "margin:20px;">Battery Capacity</label><input type="text" name="Capacity" placeholder="Battery Capacity in MAH" required="required" />
-      <label style = "margin:20px;">Sim 2 generation</label><input type="text" name="Sim_2" placeholder="Enter only numeric - 2G:2" required="required" />
-      <label style = "margin:20px;">Screen Size</label><input type="text" name="Screen_Size" placeholder="In Inches" required="required" />
-      <label style = "margin:20px;">Internal Memory</label><input type="text" name="Internal Memory" placeholder="Internal Memory in GB" required="required" />
-      <label style = "margin:20px;">Processor</label><input type="text" name="Num_cores" placeholder="Octacore - 8" required="required" />
-      <label style = "margin:20px;">RAM Capacity</label><input type="text" name="RAM" placeholder="Enter only numeric - 2,4,6,8" required="required" />
-    	<label style = "margin:20%;">Sim 1 generation</label><input type="text" name="Sim1" placeholder="Enter only numeric - 2G:2" required="required" />
+      <label style = "margin:20px;">Height</label><input type="text" name="Height" placeholder="In mm - range:140 to 200" required="required" /><br>
+      <label style = "margin:20px;">Weight</label><input type="text" name="Weight" placeholder="Weight in gms - range: 140 to 200" required="required" /><br>
+      <label style = "margin:20px;">Battery Capacity</label><input type="text" name="Capacity" placeholder="Battery Capacity in MAH" required="required" /><br>
+      <label style = "margin:20px;">Sim 2 generation</label><input type="text" name="Sim_2" placeholder="Enter only numeric - 2G:2" required="required" /><br>
+      <label style = "margin:20px;">Screen Size</label><input type="text" name="Screen_Size" placeholder="In Inches" required="required" /><br>
+      <label style = "margin:20px;">Internal Memory</label><input type="text" name="Internal Memory" placeholder="Internal Memory in GB" required="required" /><br>
+      <label style = "margin:20px;">Processor</label><input type="text" name="Num_cores" placeholder="Octacore - 8" required="required" /><br>
+      <label style = "margin:20px;">RAM Capacity</label><input type="text" name="RAM" placeholder="Enter only numeric - 2,4,6,8" required="required" /><br>
+    	<label style = "margin:20px;">Sim 1 generation</label><input type="text" name="Sim1" placeholder="Enter only numeric - 2G:2" required="required" /><br>
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
