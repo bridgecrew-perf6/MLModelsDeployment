@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+sklearn
+json
+IPython
+warnings
+tqdm
+pickle
+statsmodels
+Flask
+gunicorn
