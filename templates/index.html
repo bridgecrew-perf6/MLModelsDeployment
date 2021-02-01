@@ -42,7 +42,7 @@
     </style>
  <div class="login" style = "top:180px;" >
 	<h1>Predict Mobile Phone Rating Analysis</h1>
-
+	 <font color = "red"><center><h3>{{ prediction_text }}</h3></center></font>
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
       <label style = "margin:20px;">Height</label><input type="text" name="Height" placeholder="In mm - range:140 to 200" required="required" /><br>
@@ -60,7 +60,7 @@
 
    <br>
    <br>
-   {{ prediction_text }}
+   
 
  </div>
 
